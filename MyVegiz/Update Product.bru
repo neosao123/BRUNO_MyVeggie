@@ -1,0 +1,27 @@
+meta {
+  name: Update Product
+  type: http
+  seq: 16
+}
+
+put {
+  url: http://127.0.0.1:8000/api/v1/products/update?product_id=3
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  product_id: 3
+}
+
+body:multipart-form {
+  category_id: 5
+  product_name: Paneer Chingari
+  product_short_name: paneer
+  product_image: @file(C:\Users\Admin\Downloads\panner.png)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

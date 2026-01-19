@@ -1,0 +1,20 @@
+meta {
+  name: Delete Category
+  type: http
+  seq: 13
+}
+
+delete {
+  url: http://127.0.0.1:8000/api/v1/categories/delete?category_id=6
+  body: none
+  auth: inherit
+}
+
+params:query {
+  category_id: 6
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

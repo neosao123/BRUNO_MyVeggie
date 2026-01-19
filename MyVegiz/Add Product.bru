@@ -1,0 +1,23 @@
+meta {
+  name: Add Product
+  type: http
+  seq: 15
+}
+
+post {
+  url: http://127.0.0.1:8000/api/v1/products/create
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  category_id: 5
+  product_name: demo
+  product_short_name: demo
+  product_image: @file()
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

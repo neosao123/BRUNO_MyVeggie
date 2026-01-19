@@ -1,0 +1,25 @@
+meta {
+  name: Update Category
+  type: http
+  seq: 12
+}
+
+put {
+  url: http://127.0.0.1:8000/api/v1/categories/update?category_id=5
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  category_id: 5
+}
+
+body:multipart-form {
+  category_name: restaurants
+  category_image: @file(C:\Users\Admin\Downloads\401766213572.jpg)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Delete Product
+  type: http
+  seq: 17
+}
+
+delete {
+  url: http://127.0.0.1:8000/api/v1/products/delete?product_id=4
+  body: none
+  auth: inherit
+}
+
+params:query {
+  product_id: 4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Add Category
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://127.0.0.1:8000/api/v1/categories/create
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  : 
+}
+
+body:form-urlencoded {
+  category_name: restaurant
+  category_image: 
+}
+
+body:multipart-form {
+  category_name: xyz
+  category_image: @file(C:\Users\Admin\Downloads\image_ocr3.jpeg)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
