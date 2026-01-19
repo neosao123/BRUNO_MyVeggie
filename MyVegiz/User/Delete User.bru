@@ -1,17 +1,17 @@
 meta {
-  name: Delete UOM
+  name: Delete User
   type: http
-  seq: 5
+  seq: 4
 }
 
 delete {
-  url: http://127.0.0.1:8000/api/v1/uoms/delete?uom_id=1
+  url: http://127.0.0.1:8000/api/v1/users/delete?user_id=6
   body: none
   auth: inherit
 }
 
 params:query {
-  uom_id: 1
+  user_id: 6
 }
 
 settings {

@@ -1,19 +1,23 @@
 meta {
-  name: Add UOM
+  name: Update UOM
   type: http
   seq: 3
 }
 
-post {
-  url: http://127.0.0.1:8000/api/v1/uoms/create
+put {
+  url: http://127.0.0.1:8000/api/v1/uoms/update?uom_id=5
   body: formUrlEncoded
   auth: inherit
+}
+
+params:query {
+  uom_id: 5
 }
 
 body:form-urlencoded {
   uom_name: MiliLiter
   uom_short_name: ml
-  ~description: 
+  description: small unit
 }
 
 settings {

@@ -1,0 +1,20 @@
+meta {
+  name: UOM List
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:8000/api/v1/uoms/list
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODgyMTI3M30.CYQXvdeYJxaxNP0DDqIKZw3kdgJw7-woKX4FCJOzqj8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
