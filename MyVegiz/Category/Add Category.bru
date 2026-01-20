@@ -7,11 +7,15 @@ meta {
 post {
   url: http://127.0.0.1:8000/api/v1/categories/create
   body: multipartForm
-  auth: inherit
+  auth: bearer
 }
 
 params:query {
   : 
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODgyMzY5MX0.QHANqwKXA2di2o0hiUXIZoqXmZtfcXRebj7Dsnd1oNQ
 }
 
 body:form-urlencoded {
@@ -20,7 +24,7 @@ body:form-urlencoded {
 }
 
 body:multipart-form {
-  category_name: xyz
+  category_name: xyz abc
   category_image: @file(C:\Users\Admin\Downloads\image_ocr3.jpeg)
 }
 

@@ -5,9 +5,18 @@ meta {
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/categories/list
+  url: http://127.0.0.1:8000/api/v1/categories/list?page=1&limit=10
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 10
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODg5MDU4Nn0.9V0mE0rOBiWgLdHkG__nvE-Ko6v_IZoFvJ7omn49k5o
 }
 
 settings {

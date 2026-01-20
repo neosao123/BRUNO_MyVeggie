@@ -5,13 +5,17 @@ meta {
 }
 
 delete {
-  url: http://127.0.0.1:8000/api/v1/uoms/delete?uom_id=1
+  url: http://127.0.0.1:8000/api/v1/uoms/delete?uom_id=12
   body: none
-  auth: inherit
+  auth: bearer
 }
 
 params:query {
-  uom_id: 1
+  uom_id: 12
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODgyNDcwNX0.z5AM9EGt2zEYVYzT_K9TffQKBS_ws3hmWycPPynY1QI
 }
 
 settings {

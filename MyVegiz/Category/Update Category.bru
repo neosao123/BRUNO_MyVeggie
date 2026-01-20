@@ -7,11 +7,15 @@ meta {
 put {
   url: http://127.0.0.1:8000/api/v1/categories/update?category_id=5
   body: multipartForm
-  auth: inherit
+  auth: bearer
 }
 
 params:query {
   category_id: 5
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODgyODc5N30.ae1nl0cE6M5XqWY5u7oMi2Gtne-rL0bDWE3rIochFyg
 }
 
 body:multipart-form {

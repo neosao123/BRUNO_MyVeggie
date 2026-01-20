@@ -7,11 +7,15 @@ meta {
 delete {
   url: http://127.0.0.1:8000/api/v1/products/delete?product_id=4
   body: none
-  auth: inherit
+  auth: bearer
 }
 
 params:query {
   product_id: 4
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODgyMzY5MX0.QHANqwKXA2di2o0hiUXIZoqXmZtfcXRebj7Dsnd1oNQ
 }
 
 settings {
