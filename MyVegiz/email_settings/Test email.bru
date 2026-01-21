@@ -1,0 +1,27 @@
+meta {
+  name: Test email
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:8000/api/v1/email-settings/test
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpMTl0YW51Z2FkZUBnbWFpbC5jb20iLCJleHAiOjE3Njg5Nzg5NDJ9.yXtPjqDqNRqZrwghzlzCdEwPO8IAtJGhNO9vOYrBTK4
+}
+
+body:multipart-form {
+  to_email: dovesek872@naprb.com
+  subject: Test Mail
+  message: Hello from MyVegiz
+  : 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

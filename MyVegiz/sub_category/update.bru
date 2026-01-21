@@ -1,0 +1,25 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://127.0.0.1:8000/api/v1/sub-categories/list?page=1&limit=10
+  body: multipartForm
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 10
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpMTl0YW51Z2FkZUBnbWFpbC5jb20iLCJleHAiOjE3NjkwMDM0NTN9.GiLiZx4oQMiiOJSBeBYEXIezcX3lwocQYqUpRSJ6mvE
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

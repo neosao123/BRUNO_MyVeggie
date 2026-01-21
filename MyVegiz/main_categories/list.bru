@@ -1,0 +1,29 @@
+meta {
+  name: list
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://127.0.0.1:8000/api/v1/main-categories/update?uu_id=647b3b11-7027-4dd5-ae0d-c22839c19871
+  body: multipartForm
+  auth: bearer
+}
+
+params:query {
+  uu_id: 647b3b11-7027-4dd5-ae0d-c22839c19871
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpMTl0YW51Z2FkZUBnbWFpbC5jb20iLCJleHAiOjE3Njg5OTc3OTV9.vsxfFr5nYn_WFf4kT7r4lS3ehrcrdv4RKHamhBhquJc
+}
+
+body:multipart-form {
+  main_category_image: @file(C:\Users\91862\Downloads\R.png)
+  ~main_category_name: Vegetables
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

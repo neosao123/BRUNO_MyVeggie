@@ -1,0 +1,28 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://127.0.0.1:8000/api/v1/sub-categories/update?uu_id=5332b797-d89a-422e-a7f3-e9261504114e
+  body: multipartForm
+  auth: bearer
+}
+
+params:query {
+  uu_id: 5332b797-d89a-422e-a7f3-e9261504114e
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpMTl0YW51Z2FkZUBnbWFpbC5jb20iLCJleHAiOjE3NjkwMDM0NTN9.GiLiZx4oQMiiOJSBeBYEXIezcX3lwocQYqUpRSJ6mvE
+}
+
+body:multipart-form {
+  sub_category_name: Organic Greens
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

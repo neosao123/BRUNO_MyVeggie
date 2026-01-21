@@ -1,0 +1,26 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/api/v1/sub-categories/create
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpMTl0YW51Z2FkZUBnbWFpbC5jb20iLCJleHAiOjE3NjkwMDM0NTN9.GiLiZx4oQMiiOJSBeBYEXIezcX3lwocQYqUpRSJ6mvE
+}
+
+body:multipart-form {
+  category_id: 4
+  sub_category_name: Leafy Vegetables
+  sub_category_image: @file(C:\Users\91862\Downloads\1000_F_139743534_Sg2CP2r3T8D5jOXML7FsFFDbGPCS2suK.jpg)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
