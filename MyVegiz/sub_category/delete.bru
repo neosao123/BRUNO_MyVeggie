@@ -4,14 +4,14 @@ meta {
   seq: 2
 }
 
-get {
+delete {
   url: http://127.0.0.1:8000/api/v1/sub-categories/delete
   body: multipartForm
   auth: bearer
 }
 
 auth:bearer {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpMTl0YW51Z2FkZUBnbWFpbC5jb20iLCJleHAiOjE3NjkwNjUyNTl9.k4OPOPK6Wvi_UhYoj4CHLaPOU98PWHAi9bWIxuI4Orw
+  token: {{access_token}}
 }
 
 settings {

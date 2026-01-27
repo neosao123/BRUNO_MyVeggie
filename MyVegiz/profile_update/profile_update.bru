@@ -4,12 +4,21 @@ meta {
   seq: 1
 }
 
-get {
+put {
   url: http://127.0.0.1:8000/api/v1/users/profile_update
-  body: none
-  auth: inherit
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:multipart-form {
+  name: shruti Patil
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

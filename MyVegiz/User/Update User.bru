@@ -5,24 +5,26 @@ meta {
 }
 
 put {
-  url: http://127.0.0.1:8000/api/v1/users/update/?user_id=5
+  url: http://127.0.0.1:8000/api/v1/users/update/?uu_id=ae5f4bc9-e209-4de9-be8c-55c7778cc5fb
   body: formUrlEncoded
   auth: bearer
 }
 
 params:query {
-  user_id: 5
+  uu_id: ae5f4bc9-e209-4de9-be8c-55c7778cc5fb
 }
 
 auth:bearer {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6ImdhdXJpQGdtYWlsLmNvbSIsImV4cCI6MTc2ODgyODc5N30.ae1nl0cE6M5XqWY5u7oMi2Gtne-rL0bDWE3rIochFyg
+  token: {{access_token}}
 }
 
 body:form-urlencoded {
-  name: VidyaRani
-  email: vidya123@gmail.com
-  contact: 1234123456
-  password: 12345678
+  is_active: true
+  ~name: VidyaRani
+  ~email: vidya123@gmail.com
+  ~contact: 1234123456
+  ~password: 12345678
+  ~is_admin: true
 }
 
 settings {
