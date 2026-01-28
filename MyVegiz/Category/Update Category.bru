@@ -5,13 +5,13 @@ meta {
 }
 
 put {
-  url: http://127.0.0.1:8000/api/v1/categories/update?category_id=5
+  url: http://127.0.0.1:8000/api/v1/admin/categories/update?uu_id=bf6abe59-0711-4606-b9ea-8f66950c81b0
   body: multipartForm
   auth: bearer
 }
 
 params:query {
-  category_id: 5
+  uu_id: bf6abe59-0711-4606-b9ea-8f66950c81b0
 }
 
 auth:bearer {
@@ -19,8 +19,8 @@ auth:bearer {
 }
 
 body:multipart-form {
-  category_name: restaurants
-  category_image: @file(C:\Users\Admin\Downloads\401766213572.jpg)
+  category_name: pqr
+  ~category_image: 
 }
 
 settings {

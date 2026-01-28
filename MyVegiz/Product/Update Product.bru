@@ -5,13 +5,13 @@ meta {
 }
 
 put {
-  url: http://127.0.0.1:8000/api/v1/products/update?product_id=3
+  url: http://127.0.0.1:8000/api/v1/admin/products/update?uu_id=822dd412-e09e-4ee2-8e39-d70bce1a3959
   body: multipartForm
   auth: bearer
 }
 
 params:query {
-  product_id: 3
+  uu_id: 822dd412-e09e-4ee2-8e39-d70bce1a3959
 }
 
 auth:bearer {
@@ -22,7 +22,7 @@ body:multipart-form {
   category_id: 5
   product_name: Paneer Chingari
   product_short_name: paneer
-  product_image: @file(C:\Users\Admin\Downloads\panner.png)
+  ~product_image: 
 }
 
 settings {

@@ -5,13 +5,9 @@ meta {
 }
 
 post {
-  url: http://127.0.0.1:8000/api/v1/categories/create
+  url: http://127.0.0.1:8000/api/v1/admin/categories/create
   body: multipartForm
   auth: bearer
-}
-
-params:query {
-  : 
 }
 
 auth:bearer {
@@ -24,8 +20,9 @@ body:form-urlencoded {
 }
 
 body:multipart-form {
-  category_name: xyz abc
-  category_image: @file(C:\Users\Admin\Downloads\image_ocr3.jpeg)
+  category_name: abc
+  category_image: @file(C:\Users\91862\Downloads\images (2).jpg)
+  main_category_id: 1
 }
 
 settings {

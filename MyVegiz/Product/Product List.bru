@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/products/list?page=1&limit=10
+  url: http://127.0.0.1:8000/api/v1/admin/products/list?page=1&limit=10
   body: none
   auth: bearer
 }
@@ -17,7 +17,6 @@ params:query {
 
 auth:bearer {
   token: {{access_token}}
-  {{access_token}}
 }
 
 settings {

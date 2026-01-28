@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://127.0.0.1:8000/api/v1/products/create
+  url: http://127.0.0.1:8000/api/v1/admin/products/create
   body: multipartForm
   auth: bearer
 }
@@ -18,7 +18,7 @@ body:multipart-form {
   category_id: 5
   product_name: demo
   product_short_name: demo
-  product_image: @file()
+  ~product_image: @file()
 }
 
 settings {

@@ -5,19 +5,17 @@ meta {
 }
 
 delete {
-  url: http://127.0.0.1:8000/api/v1/products/delete?product_id=4
+  url: http://127.0.0.1:8000/api/v1/admin/products/delete?uu_id=822dd412-e09e-4ee2-8e39-d70bce1a3959
   body: none
   auth: bearer
 }
 
 params:query {
-  product_id: 4
+  uu_id: 822dd412-e09e-4ee2-8e39-d70bce1a3959
 }
 
 auth:bearer {
   token: {{access_token}}
-  {{access_token}}
-  {{access_token}}
 }
 
 settings {
