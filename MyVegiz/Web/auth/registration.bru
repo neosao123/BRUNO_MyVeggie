@@ -1,0 +1,25 @@
+meta {
+  name: registration
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/api/v1/web/auth/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "gauri",
+    "email": "gauri@gmail.com",
+    "contact": "862536671"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
