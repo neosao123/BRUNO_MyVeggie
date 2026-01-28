@@ -1,0 +1,26 @@
+meta {
+  name: send-otp
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/api/v1/web/auth/send-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 
+}
+
+body:json {
+  {
+    "mobile": "8625936671"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

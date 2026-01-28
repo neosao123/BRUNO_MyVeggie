@@ -1,0 +1,28 @@
+meta {
+  name: Verify otp
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8000/api/v1/web/auth/verify-otp
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:json {
+  // {"mobile":"9322019014","otp":"123456"}
+  
+  
+  
+  {"mobile":"8625936671","otp":"123456"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
