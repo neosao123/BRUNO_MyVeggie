@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://127.0.0.1:8000/api/v1/admin/sub-categories/create
+  url: {{base_url}}admin/sub-categories/create
   body: multipartForm
   auth: bearer
 }
@@ -16,7 +16,7 @@ auth:bearer {
 
 body:multipart-form {
   category_id: 4
-  sub_category_name: Leafy Vegetables
+  sub_category_name: Organic Greens
   sub_category_image: @file(C:\Users\91862\Downloads\1000_F_139743534_Sg2CP2r3T8D5jOXML7FsFFDbGPCS2suK.jpg)
 }
 

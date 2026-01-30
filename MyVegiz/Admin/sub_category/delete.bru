@@ -5,9 +5,13 @@ meta {
 }
 
 delete {
-  url: http://127.0.0.1:8000/api/v1/admin/sub-categories/delete
+  url: http://127.0.0.1:8000/api/v1/admin/sub-categories/delete?uu_id=28509bb4-ecad-41c4-a9e9-3e1d8db72ac4
   body: multipartForm
   auth: bearer
+}
+
+params:query {
+  uu_id: 28509bb4-ecad-41c4-a9e9-3e1d8db72ac4
 }
 
 auth:bearer {

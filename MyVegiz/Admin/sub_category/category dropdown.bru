@@ -1,18 +1,13 @@
 meta {
-  name: list
+  name: category dropdown
   type: http
-  seq: 3
+  seq: 5
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/admin/sub-categories/list?page=1&limit=10
+  url: http://127.0.0.1:8000/api/v1/admin/sub-categories/dropdown
   body: multipartForm
   auth: bearer
-}
-
-params:query {
-  page: 1
-  limit: 10
 }
 
 auth:bearer {

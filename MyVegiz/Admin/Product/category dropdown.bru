@@ -1,19 +1,13 @@
 meta {
-  name: Product List (1)
+  name: category dropdown
   type: http
   seq: 5
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/admin/products/search?q=papaa
+  url: http://127.0.0.1:8000/api/v1/admin/products/dropdown-category
   body: none
   auth: bearer
-}
-
-params:query {
-  q: papaa
-  ~page: 1
-  ~limit: 10
 }
 
 auth:bearer {
