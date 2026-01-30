@@ -1,0 +1,37 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8000/api/v1/admin/coupon_code/update?uu_id=37fe5369-7cdb-4b45-9a43-a18be6f0d31d
+  body: formUrlEncoded
+  auth: bearer
+}
+
+params:query {
+  uu_id: 37fe5369-7cdb-4b45-9a43-a18be6f0d31d
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:form-urlencoded {
+  coupon_code: SAVE62
+  coupon_type: flat
+  disc_value: 62
+  order_value: 300
+  termscondition: Get 62% off
+  coupon_description: Percentage discount coupon
+  is_active: true
+  use_limit: 10
+  expiry_date: 2026-12-31T23:59:59+05:30
+  ~cap_limit: 20
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,24 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8000/api/v1/admin/coupon_code/delete?uu_id=89c7aaf0-3e47-4d2d-be74-603edeaaf1df
+  body: none
+  auth: bearer
+}
+
+params:query {
+  uu_id: 89c7aaf0-3e47-4d2d-be74-603edeaaf1df
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
