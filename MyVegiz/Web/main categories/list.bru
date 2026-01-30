@@ -5,18 +5,14 @@ meta {
 }
 
 get {
-  url: {{base_url}}admin/main-categories/list?page =2&limit=10
+  url: {{base_url2}}/web/main_categories/list?page=2&limit=10
   body: none
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
-  "page ": 2
+  page: 2
   limit: 10
-}
-
-auth:bearer {
-  token: {{access_token}}
 }
 
 settings {
