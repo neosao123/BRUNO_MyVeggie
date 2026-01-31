@@ -1,16 +1,18 @@
 meta {
-  name: Product List
+  name: list
   type: http
   seq: 1
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/admin/products/list?page=1&limit=10
+  url: http://127.0.0.1:8000/api/v1/web/web_product_variants/list?lat=23.03&lng=72.548&page=1&limit=10
   body: none
   auth: bearer
 }
 
 params:query {
+  lat: 23.03
+  lng: 72.548
   page: 1
   limit: 10
 }
