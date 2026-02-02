@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/admin/products/dropdown-subcategory
+  url: http://127.0.0.1:8000/api/v1/admin/products/dropdown-subcategory?category_uu_id=cc51fba4-1691-4d49-99af-b09497304ea9
   body: none
   auth: bearer
+}
+
+params:query {
+  category_uu_id: cc51fba4-1691-4d49-99af-b09497304ea9
 }
 
 auth:bearer {
