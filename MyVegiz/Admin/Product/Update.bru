@@ -1,0 +1,37 @@
+meta {
+  name: Update
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://127.0.0.1:8000/api/v1/admin/products/update?uu_id=0a8797be-7349-4668-92dd-d9b80e5d97d5
+  body: multipartForm
+  auth: bearer
+}
+
+params:query {
+  uu_id: 0a8797be-7349-4668-92dd-d9b80e5d97d5
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:multipart-form {
+  removed_image_ids: 90
+  ~images: @file(C:\Users\91862\Downloads\R.png)
+  ~images: @file(C:\Users\91862\Downloads\apples-6751473_1280.jpg)
+  ~removed_image_ids: 81
+  ~long_description: demo2
+  ~short_description: demo2
+  ~category_id: 2
+  ~sub_category_id: 2
+  ~removed_image_ids: 37
+  ~removed_image_ids: 43
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
