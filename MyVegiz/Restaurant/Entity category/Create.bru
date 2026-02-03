@@ -1,0 +1,21 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url2}}/restaurant/entitycategory/create
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  entity_category: ABC
+  ~main_category_id: 17
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base_url2}}/restaurant/entitycategory/update?uu_id=23ef514a-4fd1-445d-a24c-c6d21daeaa6a
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  uu_id: 23ef514a-4fd1-445d-a24c-c6d21daeaa6a
+}
+
+body:multipart-form {
+  entity_category: Burger
+  is_active: true
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
