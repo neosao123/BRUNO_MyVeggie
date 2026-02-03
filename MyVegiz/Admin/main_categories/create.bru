@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{base_url}}admin/main-categories/create
+  url: {{base_url2}}/admin/main-categories/create
   body: multipartForm
   auth: bearer
 }
@@ -15,8 +15,8 @@ auth:bearer {
 }
 
 body:multipart-form {
-  main_category_name: Grocery & Vegetables
-  image: @file(C:\Users\Admin\Downloads\grocerryandvegetables.jpg)
+  main_category_name: Restaurant
+  image: @file(C:\Users\Admin\Downloads\restaurant.png)
 }
 
 settings {
