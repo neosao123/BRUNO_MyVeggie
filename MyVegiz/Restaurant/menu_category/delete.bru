@@ -1,0 +1,21 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base_url2}}/restaurant/menucategory/create?menu_id&menu_category=Starters
+  body: none
+  auth: inherit
+}
+
+params:query {
+  menu_id: 
+  menu_category: Starters
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
