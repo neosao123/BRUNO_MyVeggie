@@ -1,0 +1,20 @@
+meta {
+  name: delete
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{base_url2}}/restaurant/menuitem/delete?uu_id=47bcef18-f04d-4890-b174-5fadc871c9d3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  uu_id: 47bcef18-f04d-4890-b174-5fadc871c9d3
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

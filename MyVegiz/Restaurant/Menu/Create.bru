@@ -1,0 +1,22 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url2}}/restaurant/menu/create
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  menu: XXX
+  priority: 3
+  is_active: true
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,35 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base_url2}}/restaurant/menuitem/update?uu_id=e5e5aed9-f8a1-442e-ae09-75be14370424
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  uu_id: e5e5aed9-f8a1-442e-ae09-75be14370424
+}
+
+body:multipart-form {
+  item: Butter Chicken
+  sale_price: 250
+  packing_charges: 50
+  max_order_quantity: 20
+  cuisine_type: non-veg
+  menu_id: 1
+  menu_category_id: 3
+  is_active: true
+  item_image: @file(C:\Users\Admin\Downloads\butterchicken.png)
+  item_status: available
+  is_approved: true
+  description: and creamy paneer cooked in butter gravy
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

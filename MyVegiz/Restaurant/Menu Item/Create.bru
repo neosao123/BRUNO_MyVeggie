@@ -1,0 +1,31 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url2}}/restaurant/menuitem/create
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  item: Butter Chicken
+  sale_price: 250
+  packing_charges: 50
+  max_order_quantity: 20
+  cuisine_type: non-veg
+  menu_id: 1
+  menu_category_id: 3
+  is_active: true
+  item_image: @file(C:\Users\Admin\Downloads\butter_chicken.png)
+  description: Butter Chicken
+  item_status: available
+  is_approved: true
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

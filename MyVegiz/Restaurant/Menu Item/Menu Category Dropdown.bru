@@ -1,0 +1,20 @@
+meta {
+  name: Menu Category Dropdown
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url2}}/restaurant/menuitem/menu_category?menu_id=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  menu_id: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

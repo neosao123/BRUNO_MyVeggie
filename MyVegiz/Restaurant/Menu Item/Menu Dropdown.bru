@@ -1,0 +1,16 @@
+meta {
+  name: Menu Dropdown
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url2}}/restaurant/menuitem/menu
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
