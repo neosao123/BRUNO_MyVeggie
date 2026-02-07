@@ -1,0 +1,27 @@
+meta {
+  name: Create,Update
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url2}}/admin/site_cms/terms
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:multipart-form {
+  meta_title: Terms & Conditions
+  subtitle: Terms
+  meta_description: Terms description
+  page_content: <h1>Terms HTML</h1>
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

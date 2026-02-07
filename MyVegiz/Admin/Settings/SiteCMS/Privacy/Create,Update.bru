@@ -1,0 +1,27 @@
+meta {
+  name: Create,Update
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url2}}/admin/site_cms/privacy
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{access_token}}
+}
+
+body:multipart-form {
+  meta_title: Privacy Policy
+  subtitle: Privacy
+  meta_description: Privacy Policy description
+  page_content: <h1>Privacy Policy HTML</h1>
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
