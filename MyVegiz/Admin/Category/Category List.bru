@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/admin/categories/list?page=1&limit=10
+  url: http://127.0.0.1:8000/api/v1/admin/categories/list?q=Food&page=1&limit=10
   body: none
   auth: bearer
 }
 
 params:query {
+  q: Food
   page: 1
   limit: 10
-  ~: 
 }
 
 auth:bearer {

@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: http://localhost:8000/api/v1/admin/coupon_code/list?page=1&limit=10
+  url: http://localhost:8000/api/v1/admin/coupon_code/list?q=flat&page=1&limit=10
   body: none
   auth: bearer
 }
 
 params:query {
+  q: flat
   page: 1
   limit: 10
 }
