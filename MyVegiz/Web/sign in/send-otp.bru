@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://127.0.0.1:8000/api/v1/web/auth/send-otp
+  url: {{base_url}}web/auth/send-otp
   body: json
   auth: bearer
 }
@@ -16,7 +16,7 @@ auth:bearer {
 
 body:json {
   {
-    "mobile": "8625936689"
+    "mobile": "8790876543"
   }
 }
 

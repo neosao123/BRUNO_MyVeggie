@@ -5,13 +5,13 @@ meta {
 }
 
 put {
-  url: http://127.0.0.1:8000/api/v1/admin/zone/update?zone_id=11
+  url: http://127.0.0.1:8000/api/v1/admin/zone/update?zone_id=7
   body: multipartForm
   auth: bearer
 }
 
 params:query {
-  zone_id: 11
+  zone_id: 7
 }
 
 auth:bearer {
@@ -21,15 +21,30 @@ auth:bearer {
 body:multipart-form {
   polygon: '''
     [
-      {"lat":22.575200,"lng":88.367000},
-      {"lat":22.573800,"lng":88.369200},
-      {"lat":22.571900,"lng":88.366900},
-      {"lat":22.572500,"lng":88.363700}
+        {
+            "lat": 16.71010046182489,
+            "lng": 74.2505719598274
+        },
+        {
+            "lat": 16.714621750085193,
+            "lng": 74.24915575346753
+        },
+        {
+            "lat": 16.709566120680023,
+            "lng": 74.24434923491285
+        },
+        {
+            "lat": 16.70648335409585,
+            "lng": 74.24366258940503
+        },
+        {
+            "lat": 16.70640114630542,
+            "lng": 74.24851202330396
+        }
     ]
-    
   '''
   is_deliverable: true
-  zone_name: Central Kolkata
+  zone_name: Tarabai park
   ~city: Ahmedabad
   ~state: Gujarat
 }
